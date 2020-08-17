@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>CashCrab</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/materialize.css">
+<!-- custom -->
+<link rel="stylesheet" type="text/css" href="./css/loading.css">
+<!------------>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-
-  <div id="app-7">
-  <ol>
-    <!--
-      Now we provide each todo-item with the todo object
-      it's representing, so that its content can be dynamic.
-      We also need to provide each component with a "key",
-      which will be explained later.
-    -->
-    <todo-item
-      v-for="item in groceryList"
-      v-bind:todo="item"
-      v-bind:key="item.id"
-    ></todo-item>
-  </ol>
-  <ol>
-    <!--
-      Now we provide each todo-item with the todo object
-      it's representing, so that its content can be dynamic.
-      We also need to provide each component with a "key",
-      which will be explained later.
-    -->
-    <todo-item
-      v-for="item in groceryList"
-      v-bind:todo="item"
-      v-bind:key="item.id"
-    ></todo-item>
-  </ol>
+  <div class="overlay">
+    <div class="spinner center">
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+    </div>
+  </div>
 </div>
-
-  <script src="./js/vue.js" type="text/javascript"></script>
-  <script src="./js/app.js" type="text/javascript"></script>
-
+<script src="./js/materialize.js" type="text/javascript"></script>
+<script src="./js/vue.js" type="text/javascript"></script>
+<!-- custom -->
+<script src="./js/loading.js" type="text/javascript"></script>
+<!------------>
 </body>
 </html>
